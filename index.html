@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belajar UAS Sistem Operasi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="topbar">
+      <a class="brand" href="#top" aria-label="Kembali ke atas">
+        <span class="brand-icon">OS</span>
+        <span>UAS Buddy</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#materi">Materi</a>
+        <a href="#studi-kasus">Studi Kasus</a>
+        <a href="#kamus">Kamus OS</a>
+        <a href="#tips">Tips UAS</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">Ringkasan materi nomor 11–21</p>
+        <h1>Website Belajar UAS Sistem Operasi</h1>
+        <p class="hero-text">
+          Materi dibuat sederhana, lengkap dengan mind map setiap bab, studi kasus,
+          kamus istilah OS, dan latihan cepat supaya belajar malam sebelum UAS lebih terarah.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#materi">Mulai Belajar</a>
+          <a class="btn ghost" href="#studi-kasus">Latihan Kasus</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Target belajar">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <h2>Target Cepat</h2>
+        <ul>
+          <li>Paham konsep inti setiap bab.</li>
+          <li>Bisa menjawab soal studi kasus.</li>
+          <li>Hafal istilah penting OS.</li>
+          <li>Siap menjelaskan alasan teknis.</li>
+        </ul>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="section intro-grid" id="tips">
+      <article class="info-card">
+        <span class="mini-icon">🧠</span>
+        <h2>Cara belajar cepat</h2>
+        <p>Baca ringkasan, lihat mind map, lalu jawab studi kasus tanpa membuka jawaban. Ulangi istilah yang belum paham di kamus OS.</p>
+      </article>
+      <article class="info-card">
+        <span class="mini-icon">🧩</span>
+        <h2>Pola jawaban UAS</h2>
+        <p>Jawab dengan format: masalah → penyebab → konsep OS yang terkait → solusi → alasan solusi tersebut cocok.</p>
+      </article>
+      <article class="info-card">
+        <span class="mini-icon">🚀</span>
+        <h2>Fokus utama</h2>
+        <p>Utamakan memahami keamanan, file system, disk, jaringan, mobile, dan cara menilai sistem operasi desktop.</p>
+      </article>
+    </section>
+
+    <section class="section" id="materi">
+      <div class="section-title">
+        <p class="eyebrow">Materi per bab</p>
+        <h2>Pilih bab yang mau dipelajari</h2>
+        <p>Klik kartu bab untuk melihat ringkasan, analogi, poin penting, mind map, dan contoh kasus.</p>
+      </div>
+
+      <div class="tools-row">
+        <label class="search-box">
+          <span>🔎</span>
+          <input id="chapterSearch" type="search" placeholder="Cari bab, contoh: keamanan, disk, mobile..." />
+        </label>
+        <button class="btn small" id="resetProgress">Reset Progress</button>
+      </div>
+
+      <div class="chapter-grid" id="chapterGrid"></div>
+
+      <article class="chapter-detail" id="chapterDetail">
+        <div class="empty-state">
+          <div class="empty-illustration">📚</div>
+          <h3>Pilih salah satu bab</h3>
+          <p>Detail materi, mind map, dan studi kasus akan muncul di sini.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section case-zone" id="studi-kasus">
+      <div class="section-title light">
+        <p class="eyebrow">Latihan UAS</p>
+        <h2>Bank soal studi kasus</h2>
+        <p>Soal dibuat seperti kondisi nyata agar kamu terbiasa menganalisis, bukan hanya menghafal.</p>
+      </div>
+      <div class="case-controls">
+        <button class="btn primary" id="randomCaseBtn">Acak 1 Soal</button>
+        <button class="btn ghost-light" id="showAllCasesBtn">Tampilkan Semua</button>
+      </div>
+      <div class="case-output" id="caseOutput"></div>
+    </section>
+
+    <section class="section glossary-section" id="kamus">
+      <div class="section-title">
+        <p class="eyebrow">Kamus istilah</p>
+        <h2>Kamus OS sederhana</h2>
+        <p>Cari istilah yang sering muncul dalam materi Sistem Operasi.</p>
+      </div>
+
+      <label class="search-box glossary-search">
+        <span>🔤</span>
+        <input id="glossarySearch" type="search" placeholder="Cari istilah, contoh: kernel, permission, cache..." />
+      </label>
+      <div class="glossary-grid" id="glossaryGrid"></div>
+    </section>
+  </main>
+
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
+
+  <footer class="footer">
+    <p>Dibuat untuk belajar UAS Sistem Operasi. HTML, CSS, dan JavaScript murni.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
